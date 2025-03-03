@@ -1,4 +1,5 @@
 import Resume from '../assets/resume.pdf'
+import Typewriter from 'typewriter-effect';
 export default function Home() {
   return (
     <>
@@ -6,12 +7,27 @@ export default function Home() {
       <main className="grid  place-items-center h-160 bg-white px-6 py-32 sm:py-40 lg:px-8">
         <div className="text-center">
           <p className="text-base font-semibold text-blue-600">Hi, my name is </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-balance text-gray-900 sm:text-xl">
             Sandeep Madhavrao Patil
           </h2>
-          <p className="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-            AI Enthusiast | Web Developer | Tech Explorer
-          </p>
+          
+         <h1 className="mt-4 text-2xl font-semibold tracking-tight text-balance text-gray-900 sm:text-3xl"> 
+         <Typewriter
+      options={{
+        strings: [
+          "AI Enthusiast 🤖 "," Web Developer 🌐 "," Tech Explorer 🚀"
+        ],
+        autoStart: true,
+        loop: true,
+        delay: 75,
+        deleteSpeed: 40, 
+        pauseFor: 2500,
+        cursor: "|",
+      }}
+    />
+        
+        </h1>
+
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href={Resume}  

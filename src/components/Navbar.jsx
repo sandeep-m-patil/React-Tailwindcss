@@ -37,7 +37,7 @@ export default function Navbar() {
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900 hover:text-blue-600 hover:underline">
+                            <a key={item.name}  href={item.href} className="text-sm/6 font-semibold text-gray-900 hover:text-blue-600 hover:underline">
                                 {item.name}
                             </a>
                         ))}
@@ -69,7 +69,7 @@ export default function Navbar() {
                                             key={item.name}
                                             href={item.href}
                                             className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                                        > 
+                                            onClick={() => setMobileMenuOpen(false)} > 
                                             {item.name}
                                         </a>
                                     ))}

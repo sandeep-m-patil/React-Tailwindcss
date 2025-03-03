@@ -31,8 +31,8 @@ export default function About() {
   return (
     <>
   <p id='about'></p>
-      <div className="lg:p-20 p-5 ">
-        <div className="pb-10">
+      <div className="lg:p-20  p-5 mt-5 ">
+        <div className="py-10">
 
           <div class="flex items-center gap-3 border-b">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
