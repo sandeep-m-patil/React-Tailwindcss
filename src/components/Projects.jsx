@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import flipzonMobile1 from '../assets/flipzonMobile1.png';
 import flipzonMobile2 from '../assets/flipzonMobile2.png';
 import flipzonDesktop1 from '../assets/flipzonDesktop1.png';
@@ -9,9 +8,9 @@ const projects = [
   {
     id: 1,
     name: "FlipZon",
-    description1: 'Flipzon is a modern e-commerce platform built using Next.js, ShadcnUI, Zustand, and Tailwind CSS. It offers a smooth and seamless user experience, allowing users to log in or sign up using their Google account or email. Once logged in, users can explore a wide range of products categorized into sections like accessories, footwear, and more. The platform allows users to filter products by category and easily navigate through the available options.',
-    description2: 'With Zustand for efficient state management, Flipzon enables users to add items to their cart, adjust quantities (increment or decrement), and remove products. The interface is designed with a strong focus on UI/UX, using ShadcnUI for sleek, customizable components and Tailwind CSS for responsive, mobile-first styling. Additionally, Flipzon includes a Dark Mode toggle, letting users switch between light and dark themes for a personalized shopping experience. The platform combines performance, functionality, and aesthetic design for an enjoyable shopping journey.',
-    techStack: "NextJS, ShadcnUI and Zustand ",
+    description1: 'Flipzon is a modern e-commerce platform built with Next.js, ShadcnUI, Zustand, Tailwind CSS, and Clerk for secure authentication. Users can log in with Google or email via Clerk, explore products across categories like accessories and footwear, and filter items for easy navigation.',
+    description2: 'The platform offers a responsive, mobile-first design using ShadcnUI and Tailwind CSS. Zustand manages the cart, allowing users to add, remove, and adjust item quantities. With a Dark Mode toggle, Flipzon provides a personalized, secure shopping experience with a focus on performance and user-friendly design.',
+    techStack: "NextJS, ShadcnUI , Zustand and Clerk ",
     video: flipZon,
     slideDImage: [flipzonDesktop1, flipzonDesktop2], // Desktop images
     slideMImage: [flipzonMobile1, flipzonMobile2], // Mobile images
@@ -65,7 +64,6 @@ export default function Project() {
                     <img src="https://miro.medium.com/v2/resize:fit:800/1*fKV3_Y4usDYZKPsNp1yCvA.png" alt="Image 1" class="w-300 rounded-lg " />
                     <img src="https://ph-files.imgix.net/297bc3d4-bd2e-4eaa-8fb6-a289cf61ea91.png?auto=format" alt="Image 1" class="w-300 rounded-lg " />
 
-                    
                   </div>
                 </div>
 
