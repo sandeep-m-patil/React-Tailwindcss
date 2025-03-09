@@ -21,27 +21,6 @@ const projects = [
 ];
 
 export default function Project() {
-  const [view, setView] = useState('desktop');
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Change image automatically every 4 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextImage();
-    }, 4000); // Change the image every 4 seconds
-
-    return () => clearInterval(interval); // Clear interval on component unmount
-  }, [currentIndex]);
-
-  // Navigate to the next image
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (view === 'desktop' ? projects[0].slideDImage.length : projects[0].slideMImage.length));
-  };
-
-  // Navigate to the previous image
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + (view === 'desktop' ? projects[0].slideDImage.length : projects[0].slideMImage.length)) % (view === 'desktop' ? projects[0].slideDImage.length : projects[0].slideMImage.length));
-  };
 
   return (
     <div id="projects" className="relative isolate overflow-hidden bg-white px-6 py-14 sm:py-12 lg:overflow-visible lg:pl-12 lg:px-0">
@@ -60,7 +39,7 @@ export default function Project() {
           </div>
 
           <div className="py-3 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden flex items-center justify-center">
-            <div className="w-70  border-10 rounded-4xl">
+            <div className="w-70  border-12 rounded-4xl shadow-2xl">
               <video className="object-cover  rounded-2xl" autoPlay loop muted>
                 <source src={project.video} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -83,9 +62,10 @@ export default function Project() {
                   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4  px-4">
                     <img src="https://static-00.iconduck.com/assets.00/nextjs-icon-512x309-yynfidez.png" alt="Image 1" class=" rounded-lg" />
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAjouFTAB2PcXfnfkjy1SUjkaMeaymXnzoOA&s" alt="Image 1" class="w-400 rounded-lg" />
-                    <img  src="https://miro.medium.com/v2/resize:fit:800/1*fKV3_Y4usDYZKPsNp1yCvA.png" alt="Image 1" class="w-300 rounded-lg " />
+                    <img src="https://miro.medium.com/v2/resize:fit:800/1*fKV3_Y4usDYZKPsNp1yCvA.png" alt="Image 1" class="w-300 rounded-lg " />
+                    <img src="https://ph-files.imgix.net/297bc3d4-bd2e-4eaa-8fb6-a289cf61ea91.png?auto=format" alt="Image 1" class="w-300 rounded-lg " />
 
-
+                    
                   </div>
                 </div>
 
@@ -99,8 +79,8 @@ export default function Project() {
                       </svg>
                       <span>GitHub</span>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-</svg>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
 
                     </button>
                   </a>
