@@ -1,81 +1,99 @@
 import aceecLogo from '../assets/aceeclogo.png'
 import rguktLogo from '../assets/rguktlogo.jpg'
 import jnphsLogo from '../assets/jnphslogo.jpg'
-const people = [
+
+const institutions = [
   {
     name: 'ACE Engineering College',
-    email: 'B.Tech in CSE ( AI & ML )',
-    role: '9.45 / 10.00',
-    imageUrl: aceecLogo,
-    lastSeen: 'Ghatkesar, Hyderabad , Telangana',
-    lastSeenDateTime: '2023-01-23T13:23Z',
+    degree: 'B.Tech in CSE (AI & ML)',
+    cgpa: '9.45 / 10.00',
+    logoUrl: aceecLogo,
+    location: 'Ghatkesar, Hyderabad, Telangana',
   },
   {
     name: 'Rajiv Gandhi University of Knowledge Technologies',
-    email: 'Pre University Courses',
-    role: '8.60 / 10.00',
-    imageUrl: rguktLogo,
-    lastSeen: 'Basar , Nizambad , Telangana',
-    lastSeenDateTime: '2023-01-23T13:23Z',
+    degree: 'Pre University Courses',
+    cgpa: '8.60 / 10.00',
+    logoUrl: rguktLogo,
+    location: 'Basar, Nizambad, Telangana',
   },
   {
     name: 'Jawahar Nagar Pinion High School',
-    email: 'Secondary School Certificate',
-    role: '10.00 / 10.00',
-    imageUrl: jnphsLogo,
-    lastSeen: "Balaji Nagar , Hyderbad , Telangana",
+    degree: 'Secondary School Certificate',
+    cgpa: '10.00 / 10.00',
+    logoUrl: jnphsLogo,
+    location: 'Balaji Nagar, Hyderabad, Telangana',
   }
-]
+];
+
 
 export default function About() {
   return (
     <>
-  <p id='about'></p>
-      <div className="lg:p-20  p-5 mt-5 ">
-        <div className="py-10">
+      <p id='about'></p>
+      <div className="lg:px-20 px-5 lg:pt-24 mt-15 lg:mt-0">
+        <section className="py-10">
+          <header className="flex items-center gap-3 border-b border-black pb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-10 h-10 text-black"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 7.5A3.75 3.75 0 1 1 12 3.75a3.75 3.75 0 0 1 3.75 3.75Zm-9.72 9.96a7.48 7.48 0 0 1 11.94 0"
+              />
+            </svg>
+            <h1 className="text-3xl font-semibold text-gray-900">About Me</h1>
+          </header>
 
-          <div class="flex items-center gap-3 border-b">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 7.5A3.75 3.75 0 1 1 12 3.75a3.75 3.75 0 0 1 3.75 3.75Zm-9.72 9.96a7.48 7.48 0 0 1 11.94 0" />
-          </svg>
-          <h1 className="text-3xl font-medium py-5">About Me</h1>
-          </div> 
-          <p className='pt-5'>
-            Second year Computer Science and Engineering (AIML) student at ACEEC , specializing in Artificial Intelligence and Machine Learning. Passionate about developing intelligent systems that can make a meaningful impact on society.
-            Experienced in deep learning, computer vision, and natural language processing. Particularly interested in the intersection of AI , where technology can revolutionize develpment.
-            Active participant in AI/ML hackathons, and Coding Competitions. Committed to pushing the boundaries of what's possible with artificial intelligence.
+          <div className="pt-5 space-y-4 text-gray-600">
+            <p>
+              I am a Computer Science and Engineering (AI & ML) student at ACE Engineering College, specializing in Artificial Intelligence and Machine Learning. I am passionate about building intelligent systems that can bring about meaningful societal change. Beyond academics, I actively engage in AI/ML hackathons and coding competitions, continually honing my skills and pushing my limits. I am dedicated to exploring innovative AI applications and utilizing my knowledge to contribute to advancements in the field. My goal is to make a positive impact by leveraging AI and ML technologies to solve real-world challenges.  </p>
 
+          </div>
+        </section>
 
-          </p>
-        </div>
-        <ul role="list" className="divide-y divide-gray-100">
-          {people.map((person) => (
-            <li key={person.email} className="flex justify-between gap-x-6 py-5">
-              <div className="flex min-w-0 gap-x-4">
-                <img alt="" src={person.imageUrl} className="size-12 flex-none rounded-full bg-gray-50" />
-                <div className="min-w-0 flex-auto">
-                  <p className="text-sm/6 font-semibold text-gray-900">{person.name}</p>
-                  <p className="mt-1 truncate text-xs/5 text-gray-500">{person.email}</p>
-                </div>
-              </div>
-              <div className=" sm:flex sm:flex-col sm:items-end">
-                <p className="text-sm/6 text-gray-900">{person.role}</p>
-                {person.lastSeen ? (
-                  <p className="mt-1 text-xs/5 text-gray-500">
-                    <time dateTime={person.lastSeenDateTime}>{person.lastSeen}</time>
-                  </p>
-                ) : (
-                  <div className="mt-1 flex items-center gap-x-1.5">
-                    <div className="flex-none rounded-full bg-emerald-500/20 p-1">
-                      <div className="size-1.5 rounded-full bg-emerald-500" />
+        <section className="border-t border-gray-200">
+          <h2 className="sr-only">Institutions</h2>
+          <ul className="divide-y divide-gray-200">
+            {institutions.map((institution, index) => (
+              <li key={index} className="py-5 hover:bg-gray-50 transition-colors">
+                <div className="flex items-center justify-between gap-x-4 flex-col sm:flex-row">
+                  <div className="flex items-center gap-x-4 w-full sm:w-auto">
+                    <img
+                      alt={`${institution.name} logo`}
+                      src={institution.logoUrl}
+                      className="h-14 w-14 sm:h-12 sm:w-12 rounded-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="ml-4 flex flex-col">
+                      <h3 className="text-lg font-semibold text-gray-900">{institution.name}</h3>
+                      <p className="text-sm text-gray-600 mt-1">{institution.degree}</p>
+                      <p className="text-sm text-gray-500 truncate mt-1">{institution.location}</p>
                     </div>
-                    <p className="text-xs/5 text-gray-500">Online</p>
                   </div>
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
+
+                  <div className="flex flex-col mt-3 sm:mt-0">
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-sm text-black font-bold">CGPA:</span>
+                      <span className="font-medium text-gray-900">{institution.cgpa}</span>
+                    </div>
+
+
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+
+
       </div>
 
 

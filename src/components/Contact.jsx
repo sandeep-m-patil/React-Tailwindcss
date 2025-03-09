@@ -1,25 +1,30 @@
 const links = [
-    { name: 'Gmail', href: 'mailto:sandeeppatil10705@gamil.com',svgEle:<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-      </svg>
-      },
-    { name: 'GitHub', href: 'https://github.com/sandeep-m-patil?tab=repositories' ,svgEle:<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.799 8.207 11.387.6.111.793-.261.793-.58 0-.286-.011-1.04-.017-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.728.083-.728 1.204.085 1.839 1.236 1.839 1.236 1.07 1.835 2.807 1.305 3.49.998.108-.775.42-1.305.763-1.606-2.665-.3-5.466-1.333-5.466-5.93 0-1.31.468-2.382 1.236-3.22-.124-.303-.536-1.521.116-3.171 0 0 1.008-.322 3.3 1.23.96-.267 1.99-.4 3.012-.405 1.022.005 2.052.138 3.012.405 2.291-1.552 3.298-1.23 3.298-1.23.654 1.65.242 2.868.118 3.171.77.838 1.236 1.91 1.236 3.22 0 4.61-2.805 5.627-5.476 5.921.43.372.816 1.103.816 2.222 0 1.606-.014 2.898-.014 3.291 0 .321.192.694.8.58C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-      </svg>},
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/psandeep2005/',svgEle:<svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="w-6 h-6"
-      >
-        <path d="M16 8a6 6 0 0 1 6 6v6h-4v-5a2 2 0 0 0-4 0v5h-4v-12h4v2" />
-        <rect x="2" y="9" width="4" height="12" />
-        <circle cx="4" cy="4" r="2" />
-      </svg> },
+    {
+        name: 'Gmail', href: 'mailto:sandeeppatil10705@gamil.com', svgEle: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg>
+    },
+    {
+        name: 'GitHub', href: 'https://github.com/sandeep-m-patil?tab=repositories', svgEle: <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.799 8.207 11.387.6.111.793-.261.793-.58 0-.286-.011-1.04-.017-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.728.083-.728 1.204.085 1.839 1.236 1.839 1.236 1.07 1.835 2.807 1.305 3.49.998.108-.775.42-1.305.763-1.606-2.665-.3-5.466-1.333-5.466-5.93 0-1.31.468-2.382 1.236-3.22-.124-.303-.536-1.521.116-3.171 0 0 1.008-.322 3.3 1.23.96-.267 1.99-.4 3.012-.405 1.022.005 2.052.138 3.012.405 2.291-1.552 3.298-1.23 3.298-1.23.654 1.65.242 2.868.118 3.171.77.838 1.236 1.91 1.236 3.22 0 4.61-2.805 5.627-5.476 5.921.43.372.816 1.103.816 2.222 0 1.606-.014 2.898-.014 3.291 0 .321.192.694.8.58C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+        </svg>
+    },
+    {
+        name: 'LinkedIn', href: 'https://www.linkedin.com/in/psandeep2005/', svgEle: <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="w-6 h-6"
+        >
+            <path d="M16 8a6 6 0 0 1 6 6v6h-4v-5a2 2 0 0 0-4 0v5h-4v-12h4v2" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+        </svg>
+    },
 ]
 const stats = [
     { name: 'Projects', value: '3+ ' },
@@ -30,7 +35,7 @@ const stats = [
 
 export default function Contact() {
     return (
-        <div id="contact" className="relative isolate overflow-hidden bg-black py-24 sm:py-32">
+        <div id="contact" className="relative isolate overflow-hidden bg-black py-25 sm:py-32">
 
             <div
                 aria-hidden="true"
@@ -76,25 +81,25 @@ export default function Contact() {
 
                     <div className="justify-center mt-10 grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
                         {links.map((link) => (
-                            
+
                             <a key={link.name} href={link.href} target="_blank" className="flex items-center space-x-2 text-white hover:text-blue-500 transition-colors">
-                            {link.svgEle}
-                            <span className="font-medium">{link.name} &rarr;</span>
-                          </a>
-                          
+                                {link.svgEle}
+                                <span className="font-medium">{link.name} &rarr;</span>
+                            </a>
+
                         ))}
                     </div>
 
 
                 </div>
-                <div className="right-0 bottom-0 fixed p-5 overflow-hidden ">
+                <div className="absolute right-0 bottom-10 p-5 overflow-hidden">
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
                         </svg>
-
                     </a>
                 </div>
+
             </div>
 
 
