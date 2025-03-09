@@ -44,7 +44,7 @@ export default function Project() {
   };
 
   return (
-    <div id="projects" className="relative isolate overflow-hidden bg-white px-6 py-20 sm:py-12 lg:overflow-visible lg:pl-12 lg:px-0">
+    <div id="projects" className="relative isolate overflow-hidden bg-white px-6 py-14 sm:py-12 lg:overflow-visible lg:pl-12 lg:px-0">
       {projects.map((project) => (
         <div key={project.id} className="py-10 mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
