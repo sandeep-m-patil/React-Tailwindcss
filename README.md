@@ -10,7 +10,7 @@ Welcome to my personal portfolio website! I am Sandeep Madhavrao Patil , a passi
 
 ## Tech Stack
 
-**Client:** React, TailwindCSS
+**Client:** React, TailwindCSS .
 
 **Server:** Node
 
