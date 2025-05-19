@@ -6,7 +6,7 @@ const institutions = [
   {
     name: 'ACE Engineering College',
     degree: 'B.Tech in CSE (AI & ML)',
-    cgpa: '9.45 / 10.00',
+    cgpa: '9.28 / 10.00',
     logoUrl: aceecLogo,
     location: 'Ghatkesar, Hyderabad, Telangana',
   },
